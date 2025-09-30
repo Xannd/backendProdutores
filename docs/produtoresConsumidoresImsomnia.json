@@ -1,0 +1,288 @@
+{
+  "type": "collection.insomnia.rest/5.0",
+  "name": "produtoresEConsumidores",
+  "meta": {
+    "id": "wrk_c05dfb62b78c4de3aa3d93793f31ddc4",
+    "created": 1758852658881,
+    "modified": 1759171946482,
+    "description": ""
+  },
+  "collection": [
+    {
+      "url": "{{local}}/orders",
+      "name": "Criar novo pedido (Consumidor)",
+      "meta": {
+        "id": "req_e6c156f665aa448299f87bb95f7f01dd",
+        "created": 1759171951227,
+        "modified": 1759192914134,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1759171951227
+      },
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"product\": \"1\",\n  \"count\": \"10\",\n  \"total\": \"20\",\n  \"adress_delivery\": \"Rua nunes feijó\",\n \t\"date_delivery\": \"2025-09-30\"\n}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.6.1"
+        }
+      ],
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "{{local}}/orders/",
+      "name": "Editar um pedido feito (Consumidor)",
+      "meta": {
+        "id": "req_8501c37d14e1497cb3f74c26e8319738",
+        "created": 1759185340239,
+        "modified": 1759194970583,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1759185340239
+      },
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\n}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.6.1"
+        }
+      ],
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "{{local}}/orders/3",
+      "name": "Deletar um pedido feito (Consumidor)",
+      "meta": {
+        "id": "req_5b042d7690564c52bc0493247476976f",
+        "created": 1759185613581,
+        "modified": 1759186828323,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1759185613581
+      },
+      "method": "DELETE",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.6.1"
+        }
+      ],
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "{{local}}/orders/9/recuse",
+      "name": "Recusar um pedido feito (Produtor)",
+      "meta": {
+        "id": "req_095fb74d3bee46379a6b049598761ef9",
+        "created": 1759185940774,
+        "modified": 1759194609529,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1759185940774
+      },
+      "method": "PATCH",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.6.1"
+        }
+      ],
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "{{local}}/orders",
+      "name": "Buscar os pedidos feitos (Produtor - Consumidor)",
+      "meta": {
+        "id": "req_502ce07de2204a2bb1b2a0679c1d4975",
+        "created": 1759186029558,
+        "modified": 1759198223051,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1759186029558
+      },
+      "method": "GET",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.6.1"
+        }
+      ],
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "{{local}}/orders/4/status/4",
+      "name": "Atualizar o status do pedido (Produtor)",
+      "meta": {
+        "id": "req_79dabe7d36f148919027eaa1cd7c3fd9",
+        "created": 1759186521226,
+        "modified": 1759186819276,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1759186521226
+      },
+      "method": "PATCH",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.6.1"
+        }
+      ],
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "{{local}}/products",
+      "name": "Buscar produtos  (Produtor - Consumidor)",
+      "meta": {
+        "id": "req_a797620cfc3647f5a910443749671664",
+        "created": 1759189418451,
+        "modified": 1759198226075,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1759189418451
+      },
+      "method": "GET",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.6.1"
+        }
+      ],
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "{{local}}/orders/9",
+      "name": "Editar status do pedido feito (Produtor)",
+      "meta": {
+        "id": "req_c863fc0e062f4495b68f8a974db470e3",
+        "created": 1759194991514,
+        "modified": 1759195009564,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1759178645733
+      },
+      "method": "PATCH",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"status\": 3\n}"
+      },
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/11.6.1"
+        }
+      ],
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    }
+  ],
+  "cookieJar": {
+    "name": "Default Jar",
+    "meta": {
+      "id": "jar_0a985131f5b4ff94497f0df63c6eb8aae31a28a3",
+      "created": 1758852658899,
+      "modified": 1758852658899
+    }
+  },
+  "environments": {
+    "name": "Base Environment",
+    "meta": {
+      "id": "env_0a985131f5b4ff94497f0df63c6eb8aae31a28a3",
+      "created": 1758852658890,
+      "modified": 1759177663520,
+      "isPrivate": false
+    },
+    "data": {
+      "local": "http://localhost:3333"
+    }
+  }
+}
