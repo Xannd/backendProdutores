@@ -26,16 +26,6 @@ A solução implementa uma plataforma de conexão entre **Produtores Locais e Co
 
 O projeto se relaciona com o **Objetivo de Desenvolvimento Sustentável (ODS) 11: Cidades e Comunidades Sustentáveis**. Ao facilitar a conexão entre pequenos produtores da região metropolitana e consumidores locais, a plataforma incentiva a economia local, reduz intermediários e promove cadeias de suprimentos mais curtas e resilientes nas comunidades.
 
-## 3. Arquitetura da API e Diagrama
-
-O diagrama de arquitetura completo pode ser visualizado no arquivo **`docs/architecture.md`**.
-
-A solução utiliza uma **Arquitetura de Três Camadas (3-Tier Architecture)**:
-1.  **Apresentação (Frontends):** Painel do Consumidor e Painel do Produtor (desenvolvidos em React/Vite).
-2.  **Lógica de Negócios (API Central):** Desenvolvida em Node.js/Express, responsável por toda a lógica de pedidos e status.
-3.  **Dados (Database):** Camada de persistência para armazenar produtos e pedidos.
-
----
 
 ## 4. Instruções Detalhadas para Execução
 
@@ -52,14 +42,14 @@ A solução utiliza uma **Arquitetura de Três Camadas (3-Tier Architecture)**:
 
 ### Execução dos Frontends (Consumidor e Produtor)
 Cada frontend possui sua própria pasta:
-1.  Navegue até a pasta de cada frontend (`consumer-app/` e `producer-app/`).
+1.  Navegue até a pasta de cada frontend (`consumerApp/` e `producerApp/`).
 2.  Instale as dependências: `npm install`.
 3.  Inicie a aplicação: `npm run dev`.
 
-### Instruções para Teste via Postman/Insomnia
-Uma coleção completa de testes está disponível na pasta `postman/`.
+### Instruções para Teste via Insomnia
+Uma coleção completa de testes está disponível na pasta `docs/produtoresConsumidoresImsomnia.json`.
 
-1.  Importe o arquivo **`postman/collection.json`** no seu cliente REST (Insomnia/Postman).
+1.  Importe o arquivo **`produtoresConsumidoresImsomnia.json`** no seu cliente REST (Insomnia/Postman).
 2.  Defina a URL base como uma variável de ambiente (ex: `http://localhost:3000`).
 3.  Siga os testes sequenciais para criar um pedido (`POST`), listar (`GET`), alterar status (`PATCH`) e tentar excluir (`DELETE`).
 
