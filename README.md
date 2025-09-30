@@ -1,6 +1,6 @@
 # 📚 Documentação de Rotas da API REST
 
-Esta API foi desenvolvida para integrar dois sistemas distintos (Consumidor e Produtor) no fluxo de pedidos, seguindo os requisitos de projeto. A comunicação utiliza o protocolo **REST/HTTP** [cite: 24] e troca dados em formato JSON.
+Esta API foi desenvolvida para integrar dois sistemas distintos (Consumidor e Produtor) no fluxo de pedidos, seguindo os requisitos de projeto. A comunicação utiliza o protocolo **REST/HTTP** e troca dados em formato JSON.
 
 ## 1. Rotas de Pedidos (`/orders`)
 
